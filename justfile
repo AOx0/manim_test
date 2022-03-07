@@ -16,7 +16,9 @@ render config quality:
                 -c cfg/{{config}} \
                 main.py\
         "
-    just open_result {{quality}}
+    qil QuickTime
+    sleep 1
+    just openr {{quality}}
 
-open_result quality:
+openr quality:
     open /Users/alejandro/manim_test/media/videos/main/{{quality}}/DefaultTemplate.mp4 -a "QuickTime PLayer"
