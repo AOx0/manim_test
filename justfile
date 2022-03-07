@@ -13,7 +13,7 @@ render config quality:
             cd ~/Desktop/Parallels\ Shared\ Folders/Home/manim_test \
             && /home/parallels/.local/bin/manim \
                 --format mp4 \
-                -c {{config}} \
+                -c cfg/{{config}} \
                 main.py\
         "
     just open_result {{quality}}
